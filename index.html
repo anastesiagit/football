@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="firstTeamImg">
+    <img src="img/alves.jpg" alt="" id="alve" style="display:none;" onclick="show()">
+    <img src="img/alba.jpg" alt="" id="alba" style="display:none;">
+    <img src="img/arjen.jpg" alt="" id="arjen" style="display:none;">
+    <img src="img/bale.jpg" alt="" id="bale" style="display:none;"><br>
+    <!-- <img src="img/carles.jpg" alt="" id="cales" style="display:none;"> -->
+    <img src="img/cavanni.jpg" alt="" id="cavanni" style="display:none;">
+    <img src="img/CR.jpg" alt="" id="CR" style="display:none;">
+    <img src="img/gerard.jpg" alt="" id="gerard" style="display:none;"><br>
+
+   
+     <img src="img/gotze.jpg" alt="" id="gotze" style="display:none;">
+     <img src="img/hazard.jpg" alt="" id="hazard" style="display:none;">
+     <img src="img/iniesta.jpg" alt="" id="iniesta" style="display:none;">
+     <img src="img/xabi.jpg" alt="" id="xabi" style="display:none;">
+    </div>
+    <div id="can">
+        <center>
+        <canvas id="myCanvas" width="750" height="750" class="mt-3"></canvas>
+    </center>
+    </div>
+<div><h1 id="ver">VS</h1></div>
+<div id="firstteam"></div>
+<div id="secondteam"></div>
+<div id="first">
+    <div>
+     <label for="TEAMS" id="se">SELECT TEAM:</label>
+   </div>
+   <div id="secondTeamImg">
+        <img src="img/alves.jpg" alt="" id="alve" style="display:none;">
+        <img src="img/alba.jpg" alt="" id="alba" style="display:none;">
+        <img src="img/arjen.jpg" alt="" id="arjen" style="display:none;">
+        <img src="img/bale.jpg" alt="" id="bale" style="display:none;"><br>
+        <!-- <img src="img/carles.jpg" alt="" id="cales" style="display:none;"> -->
+        <img src="img/cavanni.jpg" alt="" id="cavanni" style="display:none;">
+        <img src="img/CR.jpg" alt="" id="CR" style="display:none;">
+        <img src="img/gerard.jpg" alt="" id="gerard" style="display:none;"><br>
+    
+       
+         <img src="img/gotze.jpg" alt="" id="gotze" style="display:none;">
+         <img src="img/hazard.jpg" alt="" id="hazard" style="display:none;">
+         <img src="img/iniesta.jpg" alt="" id="iniesta" style="display:none;">
+         <img src="img/xabi.jpg" alt="" id="xabi" style="display:none;">
+        </div>
+   <div id="teams">
+       <select name="" id="teamone" onchange="sert()" value="ever">
+           <option value="ARSENAL">ARSENAL</option>
+           <option value="LIVERPOOL">LIVERPOOL</option>
+           <option value="CHELSEA">CHELSEA</option>
+           <option value="MAN U"> MAN U</option>
+           <option value="BARCELONA">BARCELONA</option>
+           <option value="MAN CITY"> MAN CITY</option>
+           <option value="CRYSTAL PALACE"> CRYSTAL PALACE</option>
+           <option value="EVERTON">EVERTON</option>
+           <option value="HULL CITY"> HULL CITY</option>
+           <option value="STOKE CITY"> STOKE CITY</option>
+           <option value="SOUTHAMPSON">SOUTHAMPSON</option>
+           <option value="SUNDERLAND">SUNDERLAND</option>
+           <option value="SWANSEA CITY"> SWANSEA CITY</option>
+           <option value="BRENTFORD">BRENTFORD</option>
+       </select>
+   </div>
+ 
+<div id="pos">
+       <label for="">FORMATION</label>
+</div>
+<div id="position">
+    <select name="" id="posit" onchange="formation()">
+        <option value="4-3-4">4-3-4</option>
+        <option value="4-4-3">4-4-3</option>
+        <option value="3-4-4">3-4-4</option>
+    </select>
+</div>
+<div id="lege">
+    <label for="led" id="eg">LEGS</label>
+  </div>
+  <div id="weak">
+        <select name="" id="legs">
+                <option value="strong">STRONG</option>
+                <option value="weak">WEAK</option>
+            </select>
+  </div>
+    <!-- <div><button onclick="player()" id="playeroneId" class="btn btn-success">Player Skills</button></div> -->
+    <div id="display"></div>
+</div>
+<div id="second">
+        <div>
+          <label for="TEAMS" id="sel">SELECT TEAM:</label>
+        </div>
+        <div id="tems">
+            <select name="" id="teamtwo" onchange="sear()">
+                <option value="CARDIFF CITY"> CARDIFF CITY</option>
+                <option value="DERBY COUNTY"> DERBY COUNTY</option>
+                <option value="ASTON VILLA"> ASTON VILLA</option>
+                <option value="NEW CASTLE"> NEW CASTLE</option>
+                <option value="TOTTENHAM HOTSPUR"> TOTTENHAM HOTSPUR</option>
+                <option value="WEST HAM UNITED">WEST HAM UNITED</option>
+                <option value="BLACKPOOL">BLACKPOOL</option>
+                <option value="NORWICH CITY">NORWICH CITY</option>
+                <option value="BOURNE MOUTH">BOURNE MOUTH</option>
+                <option value="WEST BROM">WEST BROM</option>
+                <option value="BARCELONA">BARCELONA</option>
+                <option value="LIVERPOOL">LIVERPOOL</option>
+                <option value="CHELSEA">CHELSEA</option>
+                <option value="ARSENAL">ARSENAL</option>
+               
+            </select>
+        </div>
+     <div id="pot">
+            <label for="">FORMATION</label>
+     </div>
+     
+     <div id="tion">
+         <select name="" id="sit" class="btn btn-success">
+             <option value="4-3-4">4-3-4</option>
+             <option value="4-4-3">4-4-3</option>
+             <option value="3-4-4">3-4-4</option>
+         </select>
+     </div>
+     <div id="leges">
+         <label for="led" id="egs">LEGS</label>
+       </div>
+       <div id="strong">
+             <select name="" id="legg">
+                     <option value="strong">STRONG</option>
+                     <option value="weak">WEAK</option>
+                 </select>
+       </div>
+       <!-- <div><button onclick="player()" id="playertwoId" class="btn btn-success">Player Skills</button></div> -->
+       <div id="displaytwo">jfgygfgy</div>
+       </div>
+     </div>
+
+    
+</body>
+<script src="jquery/jquery.min.js"></script>
+</html>
+<script src="index.js"></script>

@@ -1,0 +1,121 @@
+body{
+    background-image: url('img/field2.jpg');
+    background-size: cover;
+    opacity: 0.7;
+}
+#myCanvas{
+    border: 5px solid #fff;
+    background-color: green;
+}
+#can{
+    margin-top: 90px;
+}
+#first{
+  margin-left: 50px;
+}
+#ver{
+    color: #fff;
+    margin-top: -840px;
+    margin-left: 760px;
+}
+#se{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 30px; 
+    letter-spacing: 2px;
+}
+#teamone{
+    margin-left: 30px;
+    background: inherit;
+    color: #fff;
+}
+#pos{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: #fff;
+}
+#posit{
+    margin-left: 30px;
+    background: inherit;
+    color: #fff;
+}
+#eg{
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#weak{
+    margin-left: 30px;
+    background: inherit;
+    color: #fff;
+}
+#second{
+    margin-left: 1300px;
+    margin-top: -650px;
+}
+#sel{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+#teamtwo{
+    background: inherit;
+    color: #fff;
+}
+#pot{
+    color: #fff;
+    margin-top: 20px;
+}
+#sit{
+    background: inherit;
+    color: #fff;
+}
+#egs{
+    margin-top: 20px; 
+    color: #fff;  
+}
+#firstteam{
+    background-color: rgb(1, 54, 10);
+    width: 300px;
+    height: 60px;
+    margin-left: 410px;
+    margin-top: -60px;
+    color: #ffff;
+    font-size: 30px;
+    text-align: center;
+}
+#secondteam{
+    background-color: rgb(1, 54, 10);
+    width: 300px;
+    height: 60px;
+    margin-left: 870px;
+    margin-top: -60px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+#playeroneId{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+#playertwoId{
+    margin-top: 8%;
+    margin-left: 0%;
+}
+#display{
+  background-color: rgb(2, 87, 2);
+  width: 25%;
+  height: 400px;
+  margin-top: 2%;
+  padding: 12px;
+  margin-left: -2%;
+  display: none;
+}
+#displaytwo{
+    background-color: rgb(2, 87, 2);
+    margin-left: -40%;
+    margin-top: 8%;
+    width: 136%;
+    height: 410px;
+    padding: 12px;
+  }
